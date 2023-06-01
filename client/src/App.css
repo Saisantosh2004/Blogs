@@ -1,0 +1,199 @@
+*{
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+
+body{
+  color:#222;
+  /* background-color: #555; */
+}
+img{
+  max-width: 100%;
+}
+main{
+  padding: 10px;
+  max-width: 960px;
+  margin:0 auto;
+  margin-top:0.6rem;
+  /* overflow: auto; */
+  /* border: 2px solid grey; */
+  /* background-color: #888; */
+  box-shadow:1px 2px 6px rgb(73, 68, 68,1) ;
+}
+
+header{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top:0.6rem;
+  align-items: center;
+}
+
+header a{
+  border:2px solid #7e4b4b;
+  background-color: #6d3535;
+  border-radius: 10%;
+  color: white;
+  padding: 0.3rem;
+  text-decoration:none;
+  box-shadow: 0px 1px 1px rgb(59, 32, 32);
+}
+
+header a.logo{
+  color: inherit;
+  border: none;
+  background-color: #fff;
+  box-shadow: none;
+  font-weight:bolder;
+  font-size: 1.5rem;;
+}
+
+header nav{
+  display: flex;
+  /* justify-content: space-between; */
+  gap:15px;
+}
+
+header nav i{
+  color:rgb(58, 210, 147);
+}
+
+div.post{
+  display: grid;
+  /* grid-template-columns: 0.9fr 1.1fr; */
+  grid-template-columns: 1fr;
+  gap:10px;
+  margin-bottom:35px;
+}
+
+@media screen and (min-width: 768px) {
+  div.post{
+    grid-template-columns: .9fr 1.1fr;
+  }
+}
+
+div.post div.texts h2{
+  margin:0;
+  font-size: 1.8rem;
+}
+
+div.post div.texts a{
+  text-decoration: none;
+  color:inherit;
+}
+
+div.post p.info{
+  margin:6px 0;
+  color: #888;
+  font-size:1rem;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+}
+
+div.post p.info a.author{
+  color:#333;
+}
+
+div.post p.summary{
+  margin:10px 0;
+  line-height: 1.4rem;
+}
+
+form.register, form.login{
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input{
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 5px 7px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+button{
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  background-color: #555;
+  border:0;
+  color: #fff;
+  border-radius: 10px;
+  padding: 7px 0;
+  
+}
+
+form.login h1,form.register h1{
+  text-align:center;
+}
+
+/* time{
+  color:white;
+} */
+
+div.post-page div.image{
+  max-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+div.post-page div.image img{
+  /* max-width: 100%; */
+  object-fit: cover;
+  object-position: center center;
+}
+
+div.post-page a{
+  text-decoration: underline;
+}
+
+div.post-page h1{
+  text-align: center;
+  margin: none;
+}
+
+div.post-page time{
+  text-align: center;
+  display: block;
+  font-size: 0.8em;
+  color: #999;
+}
+
+div.post-page div.author{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 0.8em;
+  color: #999;
+  font-weight: bold;
+
+}
+
+div.edit-row{
+  text-align: center;
+  margin-bottom: 20px;
+}
+div.post-page a.edit-btn{
+  background-color: #333;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+  padding:15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+a svg{
+  height:20px;
+}
+
+i{
+  /* text-align: center; */
+  margin-right: 15rem;
+}
